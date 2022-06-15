@@ -1,0 +1,24 @@
+.mercury:hover{
+    transform: translate(-50%,-50%) rotateY(-15deg) rotateZ(360deg);
+}
+.mercury:hover>figure{
+    transform: translate(-50%,-50%) rotateZ(-360deg) rotateX(-45deg);
+}
+
+@keyframes test {
+    to{transform: translate(0%,10%) rotate(360deg);}
+}
+
+
+cubic-bezier(1,.07,0,.92)
+
+
+.planet{
+    animation: orbitRotation linear 10s infinite;
+}
+.planet>figure{
+    animation: planetRotation linear 10s infinite;
+}
+.planet>figure>.shadow>div{
+    animation: shadowRotation 10s cubic-bezier(1,.07,0,.92) infinite;
+}
