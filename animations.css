@@ -45,3 +45,51 @@
         transform: translate(-50%,-50%) rotateZ(360deg) rotateX(90deg);
     }
 }
+
+/*--------------------------------------------------------------*/
+
+@keyframes stage1Welcome{
+    0%  {opacity: 0;}
+    10% {opacity: 0;}    
+    30% {opacity: 1;}
+    50% {transform:translate(0px,0px) scale(1);}
+    100%{transform:translate(0px,-50px) scale(0.7);}
+}
+@keyframes stage1fadein1{
+    0%  {opacity: 0;}
+    100%{opacity: 1; transform: translate(-50%,-20px);}
+}
+@keyframes stage1fadein2{
+    0%  {opacity: 0;}
+    100%{opacity: 1; transform: translate(-50%,40px)}
+}
+@keyframes playbutton{
+    0%  {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100%{opacity: 0; width:200px}
+}
+@keyframes spin{
+    to{
+        transform: rotate(540deg);
+    }
+}
+@keyframes ballgrow{
+    to{
+        transform: scale(2759%);
+    }
+}
+@keyframes loadingfadeIn{
+    0%  {opacity: 0;}
+    100% {opacity: 1; visibility: visible;}
+}
+@keyframes welcomefadeOut{
+    0%  {opacity: 1; visibility: visible;}
+    50%{transform: translateZ(0px); opacity: 0;visibility: hidden;}
+    100%{transform: translateZ(-100px); opacity: 0;visibility: hidden;}
+}
+@keyframes solarFadein{
+    0%  {opacity: 0;}
+    50%  {opacity: 0;}
+    100%  {opacity: 100;}
+}

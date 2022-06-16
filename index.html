@@ -7,24 +7,48 @@
     <title>MilkyWay</title>
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Solarsystem.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
 </head>
 <body>
     <!-- yeah i know its a star, whatever... -->
     <!-- -----------Controls----------- -->
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <input type="radio" class="input" name="">
-    <main>
-            <div class="display">
-                <div class="firstLoading">
-                    
+    <input type="radio" id="first_view" name="stage" >
+    <input type="radio" id="loading" name="stage">
+    <input type="radio" id="mainView" name="stage" checked>
+    <input type="radio" id="input" name="stage">
+    <input type="radio" id="input" name="">
+    <input type="radio" id="input" name="">
+    <input type="radio" id="input" name="">
+    <input type="radio" id="input" name="">
+    <input type="radio" id="input" name="">
+        <main>
+            <div class="welcompage flexdiv fullscreen">
+                <div class="start flexdiv fullscreen">
+                    <p>Welcome</p>
+                    <p>To begin your Experience, Press start</p>
+                    <label class="flexdiv" for="loading"><i class="bi bi-play-fill"></i></label>
                 </div>
+                <div class="loading flexdiv fullscreen">
+                    <div class="spinner flexdiv">
+                        <p>One Moment ...</p>
+                        <div class="backCircle flexdiv">
+                            <div class="greenBalls flexdiv"></div>
+                            <div class="greenBalls flexdiv"></div>
+                        </div>
+                        <div class="frontCircle flexdiv">
+                            <div class="name">AK</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="SolarSystemContainer">
                 <div class="SS">
                     <div class="planet sun">     <!-- yeah i know its a star, whatever... -->
                         <figure>
@@ -105,6 +129,91 @@
                 </div>
     
             </div>
-    </main>
+            <div class="tutorial flexdiv">
+                <div>
+                    <h2>Hey there!</h2>
+                    <p>Welcome to solar system,here you can brows and explore through different planets in our beloved solar system.</p>
+                </div>
+                <div>
+                    <h2>Zen mode</h2>
+                    <p>sit back, relax and enjoy the beauty of our home system, for a better Experience press F11 to fullscreen</p>
+                </div>
+                <label for="mainView">Continue <i class="bi bi-arrow-right"></i></label>
+            </div>
+            <nav class="afterLoad ">
+                <ul>
+                    <li>
+                        <label for="">
+                            <h3>SUN</h3><figure>
+                                <img src="assets/01.1 Sun.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/02.0 Mercury.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/03.0 Venus.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/04.0 Earth.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/05.2 Moon.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/06.0 Mars.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/07.0 Jupiter.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/saturncover.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/09.0 Uranus.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <h3></h3><figure>
+                                <img src="assets/10.0 Neptun.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </main>
 </body>
 </html>
