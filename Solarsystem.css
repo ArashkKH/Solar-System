@@ -8,6 +8,7 @@
     transform: translate(-50%,-50%) translateZ(-2000px) rotateX(50deg);
     /* background: white; */
     /* perspective: 700px; */
+    transition: 1s;
 }
 
 .planet{
@@ -27,7 +28,7 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    /* transition: 5s; */
+    transition: 1s;
 }
 
 .planet>figure::after{
@@ -345,6 +346,7 @@
     bottom: 50%;
     transform: translate(-72.5%,-50%) rotateX(80deg) rotateY(15deg);
     width: 250px;
+    transition: 1s;
 }
 
 

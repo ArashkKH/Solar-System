@@ -93,3 +93,9 @@
     50%  {opacity: 0;}
     100%  {opacity: 100;}
 }
+
+@keyframes bounce{
+    0%      {transform: translate(0px,-15px);}
+    50%     {transform: translate(0px,15px);}
+    100%    {transform: translate(0px,-15px);}
+}

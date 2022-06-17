@@ -18,20 +18,22 @@
 <body>
     <!-- yeah i know its a star, whatever... -->
     <!-- -----------Controls----------- -->
-    <input type="radio" id="first_view" name="stage" >
+    <input type="radio" id="first_view" name="stage" checked >
     <input type="radio" id="loading" name="stage">
-    <input type="radio" id="mainView" name="stage" checked>
+    <input type="radio" id="mainView" name="stage" >
+    <input type="checkbox" id="zen" name="mode" >
     <!-- <input type="radio" id="input" name=""> -->
     <input type="radio" id="sunC" name="icard">        
     <input type="radio" id="mercuryC" name="icard">        
     <input type="radio" id="venusC" name="icard">        
-    <input type="radio" id="earthC" name="icard">        
+    <input type="radio" id="earthC" name="icard" checked>        
     <input type="radio" id="moonC" name="icard">        
     <input type="radio" id="marsC" name="icard">        
     <input type="radio" id="jupiterC" name="icard">        
     <input type="radio" id="saturnC" name="icard">        
     <input type="radio" id="uranusC" name="icard">        
     <input type="radio" id="neptunC" name="icard">        
+    <input type="radio" id="akC" name="icard">        
         <main>
             <div class="welcompage flexdiv fullscreen">
                 <div class="start flexdiv fullscreen">
@@ -145,7 +147,8 @@
                 </div>
                 <label for="mainView">Continue <i class="bi bi-arrow-right"></i></label>
             </div>
-            <label for="zenmode"></label>
+            <label for="zen" class="zenmode flexdiv">Zen mode</label>
+            <a href="#infosection" id="plinfo">Planet info <i class="bi bi-chevron-double-down"></i></a>
             <nav class="afterLoad ">
                 <ul>
                     <li>
@@ -218,14 +221,25 @@
                             </figure>
                         </label>
                     </li>
+                    <li>
+                        <label for="akC">
+                            <h3>ArashKH</h3><figure>
+                                <img src="assets/Earth-like-planet.webp" alt="">
+                            </figure>
+                        </label>
+                    </li>
                 </ul>
             </nav>
-            <div class="infoDisplay Card">
+            <div class="infoDisplay Card" id="infosection">
                 <div class="PlanetCard card1">
                     
                     <div>
                         <h2>Sun</h2>
                         <p>The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth.</p>
+                    </div>
+                    <div class="navarr">
+                        <label for="" style="visibility:hidden;"><i class="bi bi-arrow-left"></i></label>
+                        <label for="mercuryC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/01.1 Sun.webp" alt="">
@@ -234,7 +248,12 @@
                 <div class="PlanetCard card2">
                     <div>
                         <h2>Mercury</h2>
-                        <p>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.</p>
+                        <p>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.
+                        </p>
+                    </div>
+                    <div class="navarr">
+                        <label for="sunC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="venusC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/02.0 Mercury.webp" alt="">
@@ -245,6 +264,10 @@
                         <h2>Venus</h2>
                         <p>Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight.</p>
                     </div>
+                    <div class="navarr">
+                        <label for="mercuryC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="earthC"><i class="bi bi-arrow-right"></i></label>
+                    </div>
                     <figure>
                         <img src="assets/03.0 Venus.webp" alt="">
                     </figure>
@@ -253,6 +276,10 @@
                     <div>
                         <h2>Earth</h2>
                         <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers. The remaining 29% of Earth's surface is land, consisting of continents and islands.</p>
+                    </div>
+                    <div class="navarr">
+                        <label for="venusC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="moonC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/04.0 Earth.webp" alt="">
@@ -263,6 +290,10 @@
                         <h2>Moon</h2>
                         <p>The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth, it is the fifth largest satellite in the Solar System, the largest satellite in the Solar System relative to its major planet, and larger than any known dwarf planet.</p>
                     </div>
+                    <div class="navarr">
+                        <label for="earthC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="marsC"><i class="bi bi-arrow-right"></i></label>
+                    </div>
                     <figure>
                         <img src="assets/05.2 Moon.webp" alt="">
                     </figure>
@@ -271,8 +302,10 @@
                     <div>
                         <h2>Mars</h2>
                         <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war.</p>
-                        <div></div>
-                        <div></div>
+                    </div>
+                    <div class="navarr">
+                        <label for="moonC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="jupiterC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/06.0 Mars.webp" alt="">
@@ -282,8 +315,10 @@
                     <div>
                         <h2>Jupiter</h2>
                         <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun.</p>
-                        <div></div>
-                        <div></div>
+                    </div>
+                    <div class="navarr">
+                        <label for="marsC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="saturnC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/07.0 Jupiter.webp" alt="">
@@ -293,8 +328,10 @@
                     <div>
                         <h2>Saturn</h2>
                         <p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.</p>
-                        <div></div>
-                        <div></div>
+                    </div>
+                    <div class="navarr">
+                        <label for="jupiterC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="uranusC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/08.0 Saturn.webp" alt="">
@@ -304,8 +341,10 @@
                     <div>
                         <h2>Uranus</h2>
                         <p>Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares, grandfather of Zeus and father of Cronus. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.</p>
-                        <div></div>
-                        <div></div>
+                    </div>
+                    <div class="navarr">
+                        <label for="saturnC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="neptunC"><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/09.0 Uranus.webp" alt="">
@@ -315,11 +354,34 @@
                     <div>
                         <h2>Neptune</h2>
                         <p>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus.</p>
-                        <div></div>
-                        <div></div>
+                    </div>
+                    <div class="navarr">
+                        <label for="uranusC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="akC" ><i class="bi bi-arrow-right"></i></label>
                     </div>
                     <figure>
                         <img src="assets/10.0 Neptun.webp" alt="">
+                    </figure>
+                </div>
+                <div class="PlanetCard card11">
+                    <div>
+                        <h2>ArashKH</h2>
+                        <div class="flexdiv">
+                            <p>Made with <i class="bi bi-balloon-heart-fill"></i> by ArashKH</p>
+                            <div class="links">
+                                <div>Socials:</div><div>
+                                <a href="https://www.linkedin.com/in/arash-kheirollahi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/arashkh_web/" target="_blank"><i class="bi bi-instagram"></i></a>
+                                <a href="https://github.com/ArashkKH" target="_blank"><i class="bi bi-github"></i></a>
+                            </div></div>
+                        </div>
+                    </div>
+                    <div class="navarr">
+                        <label for="neptunC"><i class="bi bi-arrow-left"></i></label>
+                        <label for="" style="visibility: hidden;"><i class="bi bi-arrow-right"></i></label>
+                    </div>
+                    <figure>
+                        <img src="assets/Earth-like-planet.webp" alt="">
                     </figure>
                 </div>
             </div>

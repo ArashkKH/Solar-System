@@ -22,3 +22,18 @@ cubic-bezier(1,.07,0,.92)
 .planet>figure>.shadow>div{
     animation: shadowRotation 10s cubic-bezier(1,.07,0,.92) infinite;
 }
+
+"sunC" na
+"mercuryC
+"venusC" 
+"earthC" 
+"moonC" n
+"marsC" n
+"jupiterC
+"saturnC"
+"uranusC"
+"neptunC"
+
+#zen:checked~main
+
+#loading:checked~main
